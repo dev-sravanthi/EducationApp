@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activities.ui.home.HomeFragment"
+    android:background="#F4F6F6">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardBackgroundColor="@color/white"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/_15sdp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <com.mikhaellopez.circularimageview.CircularImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/totalfee"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_45sdp"
+                                    android:src="@drawable/total_fee"
+                                    app:civ_border_color="#FFFFFF"
+                                    app:civ_border_width="@dimen/_2sdp"
+                                    android:layout_marginTop="@dimen/_2sdp" />
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp">
+
+                                <util.MyCustomTextView_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="12345"
+                                    android:textSize="@dimen/_15ssp"/>
+
+                                <util.MyCustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Fee"
+                                    android:textSize="@dimen/_12ssp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardBackgroundColor="@color/white"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/_15sdp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <com.mikhaellopez.circularimageview.CircularImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/paid_fee"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_45sdp"
+                                    android:src="@drawable/paid_fee"
+                                    app:civ_border_color="#FFFFFF"
+                                    app:civ_border_width="@dimen/_2sdp"
+                                    android:layout_marginTop="@dimen/_2sdp" />
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp">
+
+                                <util.MyCustomTextView_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="12345"
+                                    android:textSize="@dimen/_15ssp"/>
+
+                                <util.MyCustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Paid"
+                                    android:textSize="@dimen/_12ssp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardBackgroundColor="@color/white"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/_15sdp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <com.mikhaellopez.circularimageview.CircularImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/pending"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_45sdp"
+                                    android:src="@drawable/pending_fees"
+                                    app:civ_border_color="#FFFFFF"
+                                    app:civ_border_width="@dimen/_2sdp"
+                                    android:layout_marginTop="@dimen/_2sdp" />
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp">
+
+                                <util.MyCustomTextView_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="12345"
+                                    android:textSize="@dimen/_15ssp"/>
+
+                                <util.MyCustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pending"
+                                    android:textSize="@dimen/_12ssp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardBackgroundColor="@color/white"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingLeft="@dimen/_10sdp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/_15sdp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <com.mikhaellopez.circularimageview.CircularImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/attendance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_45sdp"
+                                    android:src="@drawable/attendance"
+                                    app:civ_border_color="#FFFFFF"
+                                    app:civ_border_width="@dimen/_2sdp"
+                                    android:layout_marginTop="@dimen/_2sdp" />
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp">
+
+                                <util.MyCustomTextView_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="12345"
+                                    android:textSize="@dimen/_15ssp"/>
+
+                                <util.MyCustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Attendance"
+                                    android:textSize="@dimen/_10ssp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <GridView
+                    android:id="@+id/gridView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:verticalSpacing="10dp"
+                    android:columnWidth="100dp"
+                    android:horizontalSpacing="20dp"
+                    android:stretchMode="columnWidth"
+                    android:numColumns="4">
+
+                </GridView>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

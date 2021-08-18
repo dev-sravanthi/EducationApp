@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F2F2F2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/fimageview"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            app:srcCompat="@drawable/ic_launcher_background"
+                            tools:ignore="VectorDrawableCompat"/>
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/fimage_edit"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_gravity="bottom|right"
+                            android:background="@drawable/add_profile"
+                            android:src="@drawable/editicon"/>
+
+
+                    </FrameLayout>
+
+                    <util.MyCustomTextView_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Father Image"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/mimageview"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            app:srcCompat="@drawable/ic_launcher_background"
+                            tools:ignore="VectorDrawableCompat"/>
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/mimage_edit"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_gravity="bottom|right"
+                            android:background="@drawable/add_profile"
+                            android:src="@drawable/editicon"/>
+
+                    </FrameLayout>
+
+                    <util.MyCustomTextView_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mother Image"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:src="@drawable/ic_launcher_background"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                android:layout_margin="@dimen/_12sdp"
+                android:padding="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <util.MyCustomTextView_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Father Details"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_fname"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Name"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_femailid"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Email ID"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_fmobno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Mobile No"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"
+                            android:maxLength="10"
+                            android:inputType="number"/>
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_fwatsappno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Whatsapp No"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"
+                            android:maxLength="10"
+                            android:inputType="number"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_flandlineno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Landline No"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"
+                            android:maxLength="10"
+                            android:inputType="number"/>
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_fmonthlyincome"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Monthly Income"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <Spinner
+                            android:id="@+id/spin_fprofession"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/grey"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:background="@drawable/spinner_boarder_lines"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <Spinner
+                            android:id="@+id/spin_freligion"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/grey"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:background="@drawable/spinner_boarder_lines"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_fofficeaddress"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Office Address"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                android:layout_margin="@dimen/_12sdp"
+                android:padding="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <util.MyCustomTextView_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mother Details"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_mname"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Name"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_memailid"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Email ID"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_mmobno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Mobile No"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"
+                            android:maxLength="10"
+                            android:inputType="number"/>
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_mwatsappno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Whatsapp No"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"
+                            android:maxLength="10"
+                            android:inputType="number"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_mlandlineno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Landline No"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"
+                            android:maxLength="10"
+                            android:inputType="number"/>
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_mmonthlyincome"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Monthly Income"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <Spinner
+                            android:id="@+id/spin_mprofession"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/grey"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:background="@drawable/spinner_boarder_lines"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <Spinner
+                            android:id="@+id/spin_mreligion"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/grey"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:background="@drawable/spinner_boarder_lines"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_mofficeaddress"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Office Address"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                android:layout_margin="@dimen/_12sdp"
+                android:padding="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <util.MyCustomTextView_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Passport Details"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_fpassportno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Passport NO"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_fplaceofissue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Place of Issue"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_fdateofissue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Date of Issue"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_fdateofexpiry"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Date of Expiry"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_frespermitno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Residence Permit No"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_fcivilidno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Civil ID No."
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_fdateofresperno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Date of Res. Permit Issue"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <util.MyCustomEditText
+                            android:id="@+id/ed_fdateofresperexpiry"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Date of Res. Permit Expiry"
+                            android:backgroundTint="@color/grey"
+                            android:textSize="@dimen/_12sdp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_style"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="Submit"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

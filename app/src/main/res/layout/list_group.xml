@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:padding="@dimen/_10sdp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imgicon"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"/>
+
+    <util.MyCustomTextView_Bold
+        android:id="@+id/lblListHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+</LinearLayout>

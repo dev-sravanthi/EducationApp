@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#F2F2F2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <Spinner
+                    android:id="@+id/spin_siblings"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_boarder_lines"
+                    android:layout_gravity="right"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_margin="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Route"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"/>
+
+                        <util.MyCustomTextView
+                            android:id="@+id/text_route"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:text="NA"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Stopping Point"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"/>
+
+                        <util.MyCustomTextView
+                            android:id="@+id/text_stoppingpoint"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:text="NA"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Discount category"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"/>
+
+                        <util.MyCustomTextView
+                            android:id="@+id/text_discount_cat"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:text="NA"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_margin="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <util.MyCustomTextView_Bold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bus Details"
+                        android:textColor="#01644C"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/cir_busphoto"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        app:srcCompat="@drawable/ic_launcher_background"
+                        tools:ignore="VectorDrawableCompat"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Bus No."
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"/>
+
+                        <util.MyCustomTextView
+                            android:id="@+id/text_busno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:text="NA"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Pickup Time"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"/>
+
+                        <util.MyCustomTextView
+                            android:id="@+id/text_pickuptime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:text="NA"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Trap Time"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"/>
+
+                        <util.MyCustomTextView
+                            android:id="@+id/text_trap_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:text="NA"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_margin="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <util.MyCustomTextView_Bold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Driver Details"
+                        android:textColor="#01644C"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/cir_driverphoto"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        app:srcCompat="@drawable/ic_launcher_background"
+                        tools:ignore="VectorDrawableCompat"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Driver Name"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"/>
+
+                        <util.MyCustomTextView
+                            android:id="@+id/text_drivername"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:text="NA"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Phone No"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"/>
+
+                        <util.MyCustomTextView
+                            android:id="@+id/text_driverphoneno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:text="NA"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_margin="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <util.MyCustomTextView_Bold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CareTaker Details"
+                        android:textColor="#01644C"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/cir_caretakerphoto"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        app:srcCompat="@drawable/ic_launcher_background"
+                        tools:ignore="VectorDrawableCompat"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="CareTaker Name"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"/>
+
+                        <util.MyCustomTextView
+                            android:id="@+id/text_caretakername"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:text="NA"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Phone No"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"/>
+
+                        <util.MyCustomTextView
+                            android:id="@+id/text_caretakerphoneno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:text="NA"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/expanded_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:contentDescription="@string/description_zoom_touch_close" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

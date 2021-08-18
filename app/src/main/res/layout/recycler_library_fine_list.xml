@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F2F2F2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <util.MyCustomTextView_Bold
+                android:id="@+id/text_bookname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="abcde"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#007500"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <util.MyCustomTextView_Bold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Borrow No."
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <util.MyCustomTextView_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=":"/>
+
+                <util.MyCustomTextView
+                    android:id="@+id/text_borrow_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="NA"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <util.MyCustomTextView_Bold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Accession No."
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <util.MyCustomTextView_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=":"/>
+
+                <util.MyCustomTextView
+                    android:id="@+id/text_accession_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="NA"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <util.MyCustomTextView_Bold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Return/Renew Date"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <util.MyCustomTextView_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=":"/>
+
+                <util.MyCustomTextView
+                    android:id="@+id/text_return_renew_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="NA"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <util.MyCustomTextView_Bold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Total Fine"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <util.MyCustomTextView_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=":"/>
+
+                <util.MyCustomTextView
+                    android:id="@+id/text_total_fine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="NA"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <util.MyCustomTextView_Bold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fine Status"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <util.MyCustomTextView_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=":"/>
+
+                <util.MyCustomTextView
+                    android:id="@+id/text_fine_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="NA"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/_16sdp"
+                android:paddingRight="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/shape"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Status"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"/>
+
+                        <util.MyCustomTextView
+                            android:id="@+id/text_status"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:text="NA"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Fine Days"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"/>
+
+                        <util.MyCustomTextView
+                            android:id="@+id/text_finedays"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:text="NA"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Single Day Fine"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"/>
+
+                        <util.MyCustomTextView
+                            android:id="@+id/text_singledayfine"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:text="NA"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Lost Book Amount"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <util.MyCustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"/>
+
+                        <util.MyCustomTextView
+                            android:id="@+id/text_lostbookamount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:text="NA"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

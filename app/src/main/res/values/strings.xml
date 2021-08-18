@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">EducationApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="description_image_1">android:transitionName=\"@string/transition_string\"</string>
+    <string name="description_zoom_touch_close">android:transitionName= \"@string/description_zoom_touch_close\"</string>
+
+    <string-array name="month">
+        <item>-Select Month-</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+</resources>

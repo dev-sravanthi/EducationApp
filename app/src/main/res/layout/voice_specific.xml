@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_nodatafound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <util.MyCustomTextView_Bold
+            android:layout_width="wrap_content"
+            android:layout_height="89dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center_horizontal"
+            android:text="No data found"
+            android:textSize="@dimen/_20sdp" />
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

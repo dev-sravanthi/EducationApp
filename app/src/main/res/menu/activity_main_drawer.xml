@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/d_dashboard"
+            android:title="Dashboard"
+            app:showAsAction="never">
+
+            <menu>
+                <group android:id="@+id/group2" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_sub1"
+                    android:icon="@drawable/d_dashboard"
+                    android:title="sub1" />
+
+                <item
+                    android:id="@+id/nav_sub2"
+                    android:icon="@drawable/d_dashboard"
+                    android:title="sub2" />
+
+                </group>
+            </menu>
+
+        </item>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/d_dailyactivities"
+            android:title="Daily Activities" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/d_paymentinvoice"
+            android:title="Payment/Invoice" />
+        <item
+            android:id="@+id/nav_exammanage"
+            android:icon="@drawable/d_exammanage"
+            android:title="Exam Manage" />
+        <item
+            android:id="@+id/nav_onlineclass"
+            android:icon="@drawable/d_onlineclass"
+            android:title="Online Class" />
+        <item
+            android:id="@+id/nav_library"
+            android:icon="@drawable/d_library"
+            android:title="Library" />
+        <item
+            android:id="@+id/nav_inventory"
+            android:icon="@drawable/d_inventory"
+            android:title="Inventory" />
+        <item
+            android:id="@+id/nav_hostel"
+            android:icon="@drawable/d_hostel"
+            android:title="Hostel" />
+        <item
+            android:id="@+id/nav_extraactivities"
+            android:icon="@drawable/d_extraactivites"
+            android:title="Payment/Invoice" />
+        <item
+            android:id="@+id/nav_schoolcalender"
+            android:icon="@drawable/d_schoolcalender"
+            android:title="School Calender" />
+
+    </group>
+
+</menu>
